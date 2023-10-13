@@ -1,0 +1,10 @@
+{
+  "name": "wails_demo",
+  "outputfilename": "wails_demo",
+  "frontend:install": "",
+  "frontend:build": "",
+  "author": {
+    "name": "PFinal_南丞",
+    "email": "1370288056@qq.com"
+  }
+}
