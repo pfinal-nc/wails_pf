@@ -1,6 +1,6 @@
 {
-  "name": "wails_demo",
-  "outputfilename": "wails_demo",
+  "name": "pf_tools",
+  "outputfilename": "pf_tools",
   "frontend:install": "",
   "frontend:build": "",
   "author": {
