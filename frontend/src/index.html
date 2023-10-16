@@ -20,17 +20,54 @@
 
 </header>
 <main>
-    <div class="lay-row">
-        <div class="layui-col-xs4 sh">
-            <div id="cpu"></div>
-            <div></div>
+    <div class="container">
+        <div class="clock_box">
+            <div class="clock">
+                <p id="time"></p>
+            </div>
         </div>
-        <div class="layui-col-xs4">
-
-        </div>
-
-        <div class="layui-col-xs4">
-
+        <div class="day_time" id="date"></div>
+    </div>
+    <div class="container">
+        <div class="layui-col-xs6">
+            <div class="layui-row">
+                <div class="layui-col-xs6 pl10">
+                    <div class="layui-col-xs3 layui-border-box mt10">
+                        <img src="./assets/images/host.png" alt="">
+                    </div>
+                    <div class="layui-col-xs9 layui-border-box tl mt10">
+                        <div class="layui-border-box">
+                            <div class="layui-col-xs4">HOST:</div>
+                            <div class="layui-col-xs8"><span class="layui-badge layui-bg-green" id="hostname">0</span>
+                            </div>
+                        </div>
+                        <div class="layui-border-box">
+                            <div class="layui-col-xs4">平 台:</div>
+                            <div class="layui-col-xs8">
+                                <span class="layui-badge layui-bg-green" id="core">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-xs6 pl10">
+                    <div class="layui-col-xs3 layui-border-box mt10">
+                        <img src="./assets/images/cpu.png" alt="">
+                    </div>
+                    <div class="layui-col-xs9 layui-border-box  tl mt10">
+                        <div class="layui-border-box">
+                            <div class="layui-col-xs4">CPU个数:</div>
+                            <div class="layui-col-xs8"><span class="layui-badge layui-bg-green" id="cpu_num">0</span>
+                            </div>
+                        </div>
+                        <div class="layui-border-box">
+                            <div class="layui-col-xs4">使用率:</div>
+                            <div class="layui-col-xs8">
+                                <span class="layui-badge layui-bg-green" id="used">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>

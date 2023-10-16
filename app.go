@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"github.com/shirou/gopsutil/cpu"
 	"github.com/wailsapp/wails/v2/pkg/logger"
@@ -84,4 +85,45 @@ func (a *App) GetCPUUsage() *CPUUsage {
 func (a *App) GetMemUsage() *sys.MemoryInfo {
 	mem := sys.NewMemory()
 	return mem.MemInfo()
+}
+
+func (a *App) CpuInfo() string {
+	cpuSelf := sys.NewCpu()
+	cpuInfo := cpuSelf.CPUInfo()
+	cpuInfoStr, err := json.Marshal(cpuInfo)
+	if err != nil {
+		a.log.Error(err.Error())
+	}
+	return string(cpuInfoStr)
+}
+
+func (a *App) MemInfo() string {
+	memSelf := sys.NewMemory()
+	memInfo := memSelf.MemInfo()
+	memInfoStr, err := json.Marshal(memInfo)
+	if err != nil {
+		a.log.Error(err.Error())
+	}
+	return string(memInfoStr)
+}
+
+func (a *App) HostInfo() string {
+	hostSelf := sys.NewHost()
+	hostInfo := hostSelf.HostInfo()
+	hostInfoStr, err := json.Marshal(hostInfo)
+	if err != nil {
+		a.log.Error(err.Error())
+	}
+	return string(hostInfoStr)
+}
+
+func (a *App) DiskInfo() string {
+	diskSelf := sys.NewDisk()
+	diskInfo := diskSelf.DiskInfo()
+	diskInfoStr, err := json.Marshal(diskInfo)
+	if err != nil {
+		a.log.Error(err.Error())
+	}
+	fmt.Println(string(diskInfoStr))
+	return string(diskInfoStr)
 }

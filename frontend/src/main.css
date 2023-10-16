@@ -16,22 +16,138 @@ body {
     font-weight: 400;
     src: local(""), url("assets/fonts/nunito-v16-latin-regular.woff2") format("woff2");
 }
+.bg {
+    background-color: rgba(27, 38, 54, 1);
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mt20 {
+    margin-top: 25px;
+}
+.ml20 {
+    margin-left: 20px;
+}
+.pl10 {
+    padding-left: 10px;
+}
+.fl {
+    float: left;
+}
+.bw {
+    border: 1px solid #ffffff;
+}
+.h40 {
+    height: 40vh;
+}
+
+.tl {
+    text-align: left;
+}
 
 #app main{
     text-align: center;
+    overflow: hidden;
+    height: 320px;
 }
 
-#app main .layui-row {
-    height: 95vh;
-}
 .sh {
-    height: 95vh;
+    height: 85vh;
     overflow: hidden;
 }
 .cpu div{
     height: 80vh;
 }
+
 #cpu {
     height: 80vh;
 }
+
+
+:root {
+    --color2: #56d5fc;
+    --color4: #def700;
+    --color6: #fa3195;
+}
+
+.container {
+    padding: 15px;
+    justify-content: center;
+    width: 100vw;
+    display: flex;
+    height: 50vh;
+}
+.clock_box {
+    top:40px;
+    position: relative;
+    width: 550px;
+    height: 80px;
+    border-radius: 10px;
+    background-image: linear-gradient(135deg, var(--color2), var(--color4), var(--color6));
+    /* 居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animate 4s linear infinite;
+}
+
+.clock_box::after, .clock_box::before {
+    position: absolute;
+    content: "";
+    /* 集成父级样式 */
+    background-image: inherit;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    filter: blur(15px);
+}
+
+.clock_box::before {
+    filter: blur(100px);
+}
+
+.clock {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    background-color: #2b2a2a;
+    border-radius: 8px;
+    /* 居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock p {
+    font-size: 50px;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: 2px;
+    background-image: linear-gradient(135deg, var(--color2), var(--color4), var(--color6));
+    /* text不是通用样式属性值 */
+    background-clip: text;
+    /* 这个是chrome */
+    -webkit-background-clip: text;
+}
+
+@keyframes animate {
+    100% {
+        /* 色相变化 */
+        filter: hue-rotate(360deg);
+    }
+}
+
+.day_time {
+    color: #ffffff;
+    position: absolute;
+    top:150px;
+    font-size: 16px;
+    /*background-clip: text;*/
+    /*!* 这个是chrome *!*/
+    /*-webkit-background-clip: text;*/
+}
+
 
