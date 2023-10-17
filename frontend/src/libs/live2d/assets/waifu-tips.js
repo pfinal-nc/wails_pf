@@ -1,28 +1,8 @@
-window.live2d_settings = Array(); /*
-
-    く__,.ヘヽ.　　　　/　,ー､ 〉
-    　　　　　＼ ', !-─‐-i　/　/´
-    　　　 　 ／｀ｰ'　　　 L/／｀ヽ､            Live2D 看板娘 参数设置
-    　　 　 /　 ／,　 /|　 ,　 ,　　　 ',                                           Version 1.4.2
-    　　　ｲ 　/ /-‐/　ｉ　L_ ﾊ ヽ!　 i                            Update 2018.11.12
-    　　　 ﾚ ﾍ 7ｲ｀ﾄ　 ﾚ'ｧ-ﾄ､!ハ|　 |  
-    　　　　 !,/7 '0'　　 ´0iソ| 　 |　　　
-    　　　　 |.从"　　_　　 ,,,, / |./ 　 |             网页添加 Live2D 看板娘
-    　　　　 ﾚ'| i＞.､,,__　_,.イ / 　.i 　|                    https://www.fghrsh.net/post/123.html
-    　　　　　 ﾚ'| | / k_７_/ﾚ'ヽ,　ﾊ.　|           
-    　　　　　　 | |/i 〈|/　 i　,.ﾍ |　i　|    Thanks
-    　　　　　　.|/ /　ｉ： 　 ﾍ!　　＼　|          journey-ad / https://github.com/journey-ad/live2d_src
-    　　　 　 　 kヽ>､ﾊ 　 _,.ﾍ､ 　 /､!            xiazeyu / https://github.com/xiazeyu/live2d-widget.js
-    　　　　　　 !'〈//｀Ｔ´', ＼ ｀'7'ｰr'          Live2d Cubism SDK WebGL 2.1 Projrct & All model authors.
-    　　　　　　 ﾚ'ヽL__|___i,___,ンﾚ|ノ
-    　　　　　 　　　ﾄ-,/　|___./
-    　　　　　 　　　'ｰ'　　!_,.:*********************************************************************************/
-
-
+window.live2d_settings = Array();
 // 后端接口
-live2d_settings['modelAPI']             = '//live2d.fghrsh.net/api/';   // 自建 API 修改这里
+live2d_settings['modelAPI']             = 'https://live2d.fghrsh.net/api/';   // 自建 API 修改这里
 live2d_settings['tipsMessage']          = 'waifu-tips.json';            // 同目录下可省略路径
-live2d_settings['hitokotoAPI']          = 'lwl12.com';                  // 一言 API，可选 'lwl12.com', 'hitokoto.cn', 'jinrishici.com'(古诗词)
+live2d_settings['hitokotoAPI']          = 'jinrishici.com';                  // 一言 API，可选 'lwl12.com', 'hitokoto.cn', 'jinrishici.com'(古诗词)
 
 // 默认模型
 live2d_settings['modelId']              = 1;            // 默认模型 ID，可在 F12 控制台找到
@@ -30,43 +10,43 @@ live2d_settings['modelTexturesId']      = 53;           // 默认材质 ID，可
 
 // 工具栏设置
 live2d_settings['showToolMenu']         = true;         // 显示 工具栏          ，可选 true(真), false(假)
-live2d_settings['canCloseLive2d']       = true;         // 显示 关闭看板娘  按钮，可选 true(真), false(假)
+live2d_settings['canCloseLive2d']       = false;         // 显示 关闭看板娘  按钮，可选 true(真), false(假)
 live2d_settings['canSwitchModel']       = true;         // 显示 模型切换    按钮，可选 true(真), false(假)
 live2d_settings['canSwitchTextures']    = true;         // 显示 材质切换    按钮，可选 true(真), false(假)
-live2d_settings['canSwitchHitokoto']    = true;         // 显示 一言切换    按钮，可选 true(真), false(假)
-live2d_settings['canTakeScreenshot']    = true;         // 显示 看板娘截图  按钮，可选 true(真), false(假)
-live2d_settings['canTurnToHomePage']    = true;         // 显示 返回首页    按钮，可选 true(真), false(假)
-live2d_settings['canTurnToAboutPage']   = true;         // 显示 跳转关于页  按钮，可选 true(真), false(假)
+live2d_settings['canSwitchHitokoto']    = false;         // 显示 一言切换    按钮，可选 true(真), false(假)
+live2d_settings['canTakeScreenshot']    = false;         // 显示 看板娘截图  按钮，可选 true(真), false(假)
+live2d_settings['canTurnToHomePage']    = false;         // 显示 返回首页    按钮，可选 true(真), false(假)
+live2d_settings['canTurnToAboutPage']   = false;         // 显示 跳转关于页  按钮，可选 true(真), false(假)
 
 // 模型切换模式
 live2d_settings['modelStorage']         = true;         // 记录 ID (刷新后恢复)，可选 true(真), false(假)
-live2d_settings['modelRandMode']        = 'switch';     // 模型切换，可选 'rand'(随机), 'switch'(顺序)
+live2d_settings['modelRandMode']        = 'rand';     // 模型切换，可选 'rand'(随机), 'switch'(顺序)
 live2d_settings['modelTexturesRandMode']= 'rand';       // 材质切换，可选 'rand'(随机), 'switch'(顺序)
 
 // 提示消息选项
 live2d_settings['showHitokoto']         = true;         // 显示一言
 live2d_settings['showF12Status']        = true;         // 显示加载状态
 live2d_settings['showF12Message']       = false;        // 显示看板娘消息
-live2d_settings['showF12OpenMsg']       = true;         // 显示控制台打开提示
+live2d_settings['showF12OpenMsg']       = false;         // 显示控制台打开提示
 live2d_settings['showCopyMessage']      = true;         // 显示 复制内容 提示
 live2d_settings['showWelcomeMessage']   = true;         // 显示进入面页欢迎词
 
 //看板娘样式设置
 live2d_settings['waifuSize']            = '280x250';    // 看板娘大小，例如 '280x250', '600x535'
 live2d_settings['waifuTipsSize']        = '250x70';     // 提示框大小，例如 '250x70', '570x150'
-live2d_settings['waifuFontSize']        = '12px';       // 提示框字体，例如 '12px', '30px'
+live2d_settings['waifuFontSize']        = '14px';       // 提示框字体，例如 '12px', '30px'
 live2d_settings['waifuToolFont']        = '14px';       // 工具栏字体，例如 '14px', '36px'
 live2d_settings['waifuToolLine']        = '20px';       // 工具栏行高，例如 '20px', '36px'
 live2d_settings['waifuToolTop']         = '0px'         // 工具栏顶部边距，例如 '0px', '-60px'
 live2d_settings['waifuMinWidth']        = '768px';      // 面页小于 指定宽度 隐藏看板娘，例如 'disable'(禁用), '768px'
-live2d_settings['waifuEdgeSide']        = 'left:0';     // 看板娘贴边方向，例如 'left:0'(靠左 0px), 'right:30'(靠右 30px)
+live2d_settings['waifuEdgeSide']        = 'right:10';     // 看板娘贴边方向，例如 'left:0'(靠左 0px), 'right:30'(靠右 30px)
 live2d_settings['waifuDraggable']       = 'disable';    // 拖拽样式，例如 'disable'(禁用), 'axis-x'(只能水平拖拽), 'unlimited'(自由拖拽)
 live2d_settings['waifuDraggableRevert'] = true;         // 松开鼠标还原拖拽位置，可选 true(真), false(假)
 
 // 其他杂项设置
 live2d_settings['l2dVersion']           = '1.4.2';        // 当前版本
 live2d_settings['l2dVerDate']           = '2018.11.12'; // 版本更新日期
-live2d_settings['homePageUrl']          = 'auto';       // 主页地址，可选 'auto'(自动), '{URL 网址}'
+live2d_settings['homePageUrl']          = 'https://friday-go.icu';       // 主页地址，可选 'auto'(自动), '{URL 网址}'
 live2d_settings['aboutPageUrl']         = 'https://www.fghrsh.net/post/123.html';   // 关于页地址, '{URL 网址}'
 live2d_settings['screenshotCaptureName']= 'live2d.png'; // 看板娘截图文件名，例如 'live2d.png'
 
@@ -106,7 +86,7 @@ function showMessage(text, timeout, flag) {
         
         $('.waifu-tips').stop();
         $('.waifu-tips').html(text).fadeTo(200, 1);
-        if (timeout === undefined) timeout = 5000;
+        if (timeout === undefined) timeout = 3000;
         hideMessage(timeout);
     }
 }
@@ -151,9 +131,9 @@ function initModel(waifuPath, type) {
         else $(".waifu").css("transition", 'all .3s ease-in-out');
     } catch(err) { console.log('[Error] JQuery UI is not defined.') }
     
-    // live2d_settings.homePageUrl = live2d_settings.homePageUrl == 'auto' ? window.location.protocol+'//'+window.location.hostname+'/' : live2d_settings.homePageUrl;
-    // if (window.location.protocol == 'file:' && live2d_settings.modelAPI.substr(0,2) == '//') live2d_settings.modelAPI = 'http:'+live2d_settings.modelAPI;
-    //
+    live2d_settings.homePageUrl = live2d_settings.homePageUrl == 'auto' ? window.location.protocol+'//'+window.location.hostname+'/' : live2d_settings.homePageUrl;
+    if (window.location.protocol == 'file:' && live2d_settings.modelAPI.substr(0,2) == '//') live2d_settings.modelAPI = 'http:'+live2d_settings.modelAPI;
+
     $('.waifu-tool .fui-home').click(function (){
         //window.location = 'https://www.fghrsh.net/';
         window.location = live2d_settings.homePageUrl;

@@ -5,6 +5,7 @@
     font-size: 0;
     -webkit-transform: translateY(3px);
     transform: translateY(3px);
+    right: 0px;
 }
 .waifu:hover {
     -webkit-transform: translateY(0);
@@ -12,7 +13,7 @@
 }
 .waifu-tips {
     opacity: 0;
-    margin: -20px 20px;
+    margin: -31px -5px;
     padding: 5px 10px;
     border: 1px solid rgba(224, 186, 140, 0.62);
     border-radius: 12px;
@@ -26,6 +27,13 @@
     animation-iteration-count: infinite;
     animation-name: shake;
     animation-timing-function: ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    background-image: -webkit-linear-gradient(left, #147B96, #E6D205 25%, #147B96 50%, #E6D205 75%, #147B96);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 200% 100%;
 }
 .waifu-tool {
     display: none;
