@@ -239,7 +239,7 @@ function loadTipsMessage(result) {
     
     window.showWelcomeMessage = function(result) {
         var text;
-        if (window.location.href == live2d_settings.homePageUrl) {
+        if (true) {
             var now = (new Date()).getHours();
             if (now > 23 || now <= 5) text = getRandText(result.waifu.hour_tips['t23-5']);
             else if (now > 5 && now <= 7) text = getRandText(result.waifu.hour_tips['t5-7']);
