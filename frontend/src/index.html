@@ -8,10 +8,13 @@
     <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
     <!-- Main Source Files -->
     <link rel="stylesheet" href="../libs/layui/css/layui.css"/>
+    <link rel="stylesheet" href="../libs/live2d/assets/waifu.css"/>
     <link rel="stylesheet" href="main.css"/>
     <script src="../libs/jquery-3.4.1/jquery-3.4.1.min.js"></script>
     <script src="../libs/echarts/echarts.min.js"></script>
     <script src="../libs/layui/layui.js"></script>
+    <script src="../libs/live2d/assets/waifu-tips.js"></script>
+    <script src="../libs/live2d/assets/live2d.js"></script>
     <script src="main.js"></script>
 </head>
 
@@ -68,6 +71,14 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" class="live2d"></canvas>
+        <div class="waifu-tool"><span class="fui-home"></span> <span class="fui-chat"></span> <span
+                class="fui-eye"></span> <span class="fui-user"></span> <span class="fui-photo"></span> <span
+                class="fui-info-circle"></span> <span class="fui-cross"></span>
         </div>
     </div>
 </main>

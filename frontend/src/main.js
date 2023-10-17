@@ -141,4 +141,7 @@ $(function () {
     event_host_on()
     event_cpu_on()
     event_time()
+    live2d_settings['modelId'] = 1; live2d_settings['modelTexturesId'] = 87;
+    initModel("/libs/live2d/assets/waifu-tips.json")
+
 })
