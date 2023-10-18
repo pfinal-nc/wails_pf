@@ -23,7 +23,7 @@ func main() {
 
 	// Create application with options
 	err := wails.Run(&options.App{
-		Title:             "wails_demo",
+		Title:             "PF_tools",
 		Width:             1280,
 		Height:            320,
 		MinWidth:          1280,
@@ -34,7 +34,6 @@ func main() {
 		StartHidden:       false,
 		HideWindowOnClose: true,
 		BackgroundColour:  &options.RGBA{R: 16, G: 12, B: 42, A: 255},
-		Assets:            assets,
 		AlwaysOnTop:       true,
 		Menu:              nil,
 		Logger:            nil,
