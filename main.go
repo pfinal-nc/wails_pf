@@ -35,7 +35,7 @@ func main() {
 		HideWindowOnClose: true,
 		BackgroundColour:  &options.RGBA{R: 16, G: 12, B: 42, A: 255},
 		Assets:            assets,
-		AlwaysOnTop:       true,
+		AlwaysOnTop:       false,
 		Menu:              nil,
 		Logger:            nil,
 		LogLevel:          logger.DEBUG,
