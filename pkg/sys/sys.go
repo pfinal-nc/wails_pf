@@ -101,7 +101,7 @@ func NewHost() *Host {
 
 func (h *Host) HostInfo() *HostInfo {
 	hostInfo, err := host.Info()
-	fmt.Println(hostInfo)
+	//fmt.Println(hostInfo)
 	if err != nil {
 		fmt.Println("get host info fail, error: ", err)
 	}
