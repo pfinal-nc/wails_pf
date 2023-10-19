@@ -2,4 +2,4 @@
 
 效果图如下:
 
-![](https://raw.githubusercontent.com/pfinal-nc/iGallery/master/blog/202310161846197.png)
+![](https://raw.githubusercontent.com/pfinal-nc/iGallery/master/blog/202310181123657.png)
