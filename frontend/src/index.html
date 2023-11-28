@@ -19,9 +19,7 @@
 </head>
 
 <body id="app" class="app" style="--wails-draggable:drag">
-<header>
-
-</header>
+<header></header>
 <main>
     <div class="container">
         <div class="clock_box">
@@ -31,7 +29,7 @@
         </div>
         <div class="day_time" id="date"></div>
     </div>
-    <div class="container">
+    <div class="container" style="overflow: hidden ">
         <div class="layui-col-xs8">
             <div class="layui-row">
                 <div class="layui-col-xs6 pl10">
@@ -39,12 +37,12 @@
                         <img src="./assets/images/host.png" alt="">
                     </div>
                     <div class="layui-col-xs9 layui-border-box tl mt10">
-                        <div class="layui-border-box">
+                        <div class="layui-row">
                             <div class="layui-col-xs2">HOST:</div>
                             <div class="layui-col-xs10"><span class="layui-badge layui-bg-green" id="hostname">0</span>
                             </div>
                         </div>
-                        <div class="layui-border-box">
+                        <div class="layui-row">
                             <div class="layui-col-xs2">平 台:</div>
                             <div class="layui-col-xs10">
                                 <span class="layui-badge layui-bg-green" id="core">0</span>
@@ -56,16 +54,16 @@
                     <div class="layui-col-xs3 layui-border-box mt10">
                         <img src="./assets/images/cpu.png" alt="">
                     </div>
-                    <div class="layui-col-xs9 layui-border-box  tl mt10">
-                        <div class="layui-border-box">
+                    <div class="layui-col-xs9 layui-border-box tl mt10">
+                        <div class="layui-row">
                             <div class="layui-col-xs4">CPU个数:</div>
-                            <div class="layui-col-xs8"><span class="layui-badge layui-bg-green" id="cpu_num">0</span>
+                            <div class="layui-col-xs8"><span class="layui-badge layui-bg-green"
+                                                             id="cpu_num">0</span>
                             </div>
                         </div>
-                        <div class="layui-border-box">
+                        <div class="layui-row">
                             <div class="layui-col-xs4">使用率:</div>
-                            <div class="layui-col-xs8">
-                                <span class="layui-badge layui-bg-green" id="used">0</span>
+                            <div class="layui-col-xs8"><span class="layui-badge layui-bg-green" id="used">0</span>
                             </div>
                         </div>
                     </div>
@@ -77,8 +75,8 @@
         <div class="waifu-tips"></div>
         <canvas id="live2d" class="live2d"></canvas>
         <div class="waifu-tool"><span class="fui-home"></span> <span class="fui-chat"></span> <span
-                class="fui-eye"></span> <span class="fui-user"></span> <span class="fui-photo"></span> <span
-                class="fui-info-circle"></span> <span class="fui-cross"></span>
+                    class="fui-eye"></span> <span class="fui-user"></span> <span class="fui-photo"></span> <span
+                    class="fui-info-circle"></span> <span class="fui-cross"></span>
         </div>
     </div>
 </main>
