@@ -33,7 +33,7 @@ func main() {
 		Frameless:         false,
 		StartHidden:       false,
 		HideWindowOnClose: true,
-		BackgroundColour:  &options.RGBA{R: 16, G: 12, B: 42, A: 255},
+		BackgroundColour:  &options.RGBA{R: 0, G: 0, B: 0, A: 0},
 		Assets:            assets,
 		AlwaysOnTop:       false,
 		Menu:              nil,
@@ -43,17 +43,21 @@ func main() {
 		OnDomReady:        app.domReady,
 		OnBeforeClose:     app.beforeClose,
 		OnShutdown:        app.shutdown,
-		WindowStartState:  options.Normal,
+		// WindowStartState:  options.Normal,
+		WindowStartState: 1,
+		CSSDragProperty:  "widows",
+		CSSDragValue:     "1",
 		Bind: []interface{}{
 			app,
 		},
 		// Windows platform specific options
 		Windows: &windows.Options{
-			WebviewIsTransparent: false,
-			WindowIsTranslucent:  false,
-			DisableWindowIcon:    false,
+			WebviewIsTransparent: true,
+			WindowIsTranslucent:  true,
+			DisableWindowIcon:    true,
 			// DisableFramelessWindowDecorations: false,
 			WebviewUserDataPath: "",
+			Theme:               windows.SystemDefault,
 		},
 		// Mac platform specific options
 		Mac: &mac.Options{

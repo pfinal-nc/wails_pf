@@ -5,3 +5,7 @@ This is an amazing desktop clock app that not only accurately displays the time,
 效果图如下:
 
 ![](https://raw.githubusercontent.com/pfinal-nc/iGallery/master/blog/202310181123657.png)
+
+
+## Stargazers over time
+[![Stargazers over time](https://starchart.cc/pfinal-nc/wails_pf.svg?variant=adaptive)](https://starchart.cc/pfinal-nc/wails_pf)
